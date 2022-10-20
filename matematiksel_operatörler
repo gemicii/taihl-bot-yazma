@@ -1,0 +1,12 @@
+"""
+Toplama: +
+Çıkarma: -
+Çarpma: *
+Bölme: /
+Üs: **
+Mod: %
+Tam Bölme: //
+"""
+
+#TOPLAMA
+print(695+524)
