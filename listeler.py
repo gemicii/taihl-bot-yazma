@@ -13,7 +13,7 @@ print(kelimeler[2])
 print(kelimeler[3])
 print(kelimeler[4])
 print(kelimeler[5])
-print(kelimeler[-2])
+print(kelimeler[6])
 
 ad = "Alperen GEMİCİ"
 print(ad[9])
