@@ -8,3 +8,5 @@ class Tarayici:
 
     def __init__(self):
         self.tarayici = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+    def al(self):
+        return self.tarayici
