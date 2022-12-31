@@ -1,11 +1,9 @@
-# selenium ve diğerleri paketler içeri aktarlım
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as ChromeService
-
-from webdriver_manager.chrome import ChromeDriverManager
+# tarayıcı nesnemizi import edelim
+from moduller.tarayici import Tarayici
 from time import sleep
 
-tarayici = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+tarayici_nesnesi = Tarayici()
+tarayici = tarayici_nesnesi.al()
 
 # tarayıcıda gezinme
 tarayici.get("https://teknolojiaihl.meb.k12.tr/")
@@ -30,7 +28,7 @@ sleep(2)
 print(tarayici.get_window_size())
 
 # pencere boyutunu ayarlayalım
-tarayici.set_window_size(500,300)
+tarayici.set_window_size(100,100)
 
 # pencerenin pozisyonunu yazdıralım
 print(tarayici.get_window_position())
