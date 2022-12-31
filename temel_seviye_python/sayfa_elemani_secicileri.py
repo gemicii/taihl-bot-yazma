@@ -13,7 +13,7 @@ tarayici.maximize_window()
 # class seçici kullanarak bir elemana ulaşalım
 baslik = tarayici.find_element(By.CLASS_NAME, "container")
 # başlığın ekran görüntüsünü alalım
-baslik.screenshot("./gorseller/bot-yazma.png")
+# baslik.screenshot("./gorseller/bot-yazma.png")
 
 # css seçici ile elemana ulaşalım
 arama_kutusu = tarayici.find_element(By.CSS_SELECTOR, "#araTextBox")
@@ -44,3 +44,4 @@ linkler = tarayici.find_elements(By.TAG_NAME, "a")
 print(len(linkler))
 # xpath ile elemana ulaşalım
 iletisim = tarayici.find_element(By.XPATH, '//*[@id="o_hakkinda"]')
+iletisim.screenshot("gorseller/iletisim.png")
